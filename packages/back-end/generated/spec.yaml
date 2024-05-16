@@ -795,12 +795,10 @@ paths:
               type: object
               required:
                 - name
-                - organization
                 - languages
+                - environment
               properties:
                 name:
-                  type: string
-                organization:
                   type: string
                 languages:
                   type: array
@@ -810,17 +808,12 @@ paths:
                   type: string
                 environment:
                   type: string
-                project:
-                  description: Use 'projects' instead. This is only for backwards compatibility and contains the first project only.
-                  type: string
                 projects:
                   type: array
                   items:
                     type: string
                 encryptPayload:
                   type: boolean
-                encryptionKey:
-                  type: string
                 includeVisualExperiments:
                   type: boolean
                 includeDraftExperiments:
@@ -829,16 +822,10 @@ paths:
                   type: boolean
                 includeRedirectExperiments:
                   type: boolean
-                key:
-                  type: string
                 proxyEnabled:
                   type: boolean
                 proxyHost:
                   type: string
-                proxySigningKey:
-                  type: string
-                sseEnabled:
-                  type: boolean
                 hashSecureAttributes:
                   type: boolean
                 remoteEvalEnabled:
@@ -908,17 +895,12 @@ paths:
                   type: string
                 environment:
                   type: string
-                project:
-                  description: Use 'projects' instead. This is only for backwards compatibility and contains the first project only.
-                  type: string
                 projects:
                   type: array
                   items:
                     type: string
                 encryptPayload:
                   type: boolean
-                encryptionKey:
-                  type: string
                 includeVisualExperiments:
                   type: boolean
                 includeDraftExperiments:
@@ -927,16 +909,10 @@ paths:
                   type: boolean
                 includeRedirectExperiments:
                   type: boolean
-                key:
-                  type: string
                 proxyEnabled:
                   type: boolean
                 proxyHost:
                   type: string
-                proxySigningKey:
-                  type: string
-                sseEnabled:
-                  type: boolean
                 hashSecureAttributes:
                   type: boolean
                 remoteEvalEnabled:
